@@ -1,0 +1,144 @@
+body{
+    margin: 0;
+    background-color: lightgray;
+}
+
+#banner{
+    width: 100%;
+    height: 70px;
+    background-color: #000000;
+}
+
+#banner-logo{
+    width: auto;
+    height: 60px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+#banner-ul{
+    color: #FFFFFF;
+    float: right;
+    list-style: none;
+}
+
+#banner-ul li{
+    float: left;
+    font-size: 30px;
+    padding: 5px;
+}
+
+#banner-ul li:hover{
+    background-color: darkgrey;
+    color: #FFF000;
+}
+
+.passage{
+    width: auto;
+    background-color: #FFFFFF;
+    margin: 20px 480px 20px 20px;
+    box-shadow: 4px 4px 2px grey;
+    padding: 20px;
+    overflow: auto;
+}
+
+p{
+    text-indent: 2em;
+}
+
+.passage img{
+    width: 100%;
+    height: 100%;
+}
+
+.passage_three{
+    width: 200px;
+    height:150px;
+    border: 1px solid black;
+    text-align: center;
+    margin: 20px;
+    float: left;
+}
+
+.passage_three img{
+    width: 95px;
+    height: 60px;
+}
+
+.passage ol{
+    margin: 20px;
+}
+
+.passage_four{
+    width: auto;
+    height: 420px;
+    background-color: #FFFFFF;
+    margin: 20px;
+    box-shadow: 4px 4px 2px grey;
+    padding: 20px;
+}
+
+table{
+    width: 100%;
+}
+
+#tr_first{
+    background-color: black;
+    color: #FFFFFF;
+}
+
+#tr_last{
+    background-color: darkgray;
+}
+
+#submit{
+    width: 100%;
+    height: 40px;
+    background-color: dodgerblue;
+    border: 0;
+    color: #FFFFFF;
+    font-size: larger;
+    border-radius: 10px;
+}
+
+#tab_main{
+    height: 620px;
+    background-color: #FFFFFF;
+    margin: 20px;
+    box-shadow: 4px 4px 2px grey;
+    padding: 20px;
+    position: absolute;
+    top: 70px;
+    right: 0;
+}
+
+#container{
+    margin: 20px;
+    text-align: center;
+}
+
+#footer{
+    width: 100%;
+    height: 50px;
+    background-color: #333333;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
+
+#usr_table td:first-child{
+    float: right;
+}
+
+#usr_table td:first-child+td{
+    text-align: left;
+}
+
+/*.right{*/
+/*float: right;*/
+/*}*/
+
+/*.left{*/
+/*text-align: left;*/
+/*}*/
+
