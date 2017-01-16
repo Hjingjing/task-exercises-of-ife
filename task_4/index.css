@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+
+/*方法一的CSS*/
+/*#box_wrapper{*/
+    /*width: 100%;*/
+    /*height: 500px;*/
+    /*border: 1px solid red;*/
+    /*!*定义弹性布局*!*/
+    /*display: -webkit-flex;*/
+    /*display: flex;*/
+    /*!*主轴上的排列方式 垂直*!*/
+    /*-webkit-justify-content: center;*/
+    /*justify-content: center;*/
+    /*!*交叉轴上的排列方式 水平和垂直的交叉*!*/
+    /*-webkit-align-items: center;*/
+    /*align-items: center;*/
+/*}*/
+
+/*#box{*/
+    /*width: 400px;*/
+    /*height: 200px;*/
+    /*background-color: silver;*/
+    /*position: relative;*/
+/*}*/
+
+
+
+/*方法二的CSS*/
+#box{
+    width: 400px;
+    height: 200px;
+    background-color: silver;
+    position: absolute;
+    top:50%;
+    margin-top: -100px;
+    left: 50%;
+    margin-left: -200px;
+}
+
+#radius_left{
+    width: 50px;
+    height: 50px;
+    /*利用50px一个半圆*/
+    border-radius: 0 0 50px 0;
+    background-color: #FFF000;
+}
+
+#radius_right{
+    width: 50px;
+    height: 50px;
+    /*利用50px一个半圆*/
+    border-radius: 50px 0 0 0;
+    background-color: #FFF000;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
