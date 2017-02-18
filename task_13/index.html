@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>零基础JavaScript编码（一）</title>
+</head>
+<body>
+
+<label>请输入北京今天空气质量：<input id="aqi-input" type="text"></label>
+<button id="button" onclick="showInner()">确认填写</button>
+
+<div>您输入的值是：<span id="aqi-display">尚无录入</span></div>
+
+<script type="text/javascript">
+
+    //给按钮button绑定一个点击事件
+    function showInner() {
+        var aqi_input=document.getElementById("aqi-input");
+        var aqi_display=document.getElementById("aqi-display");
+        aqi_display.innerHTML=aqi_input.value;
+    }
+
+</script>
+
+</body>
+</html>
