@@ -4,29 +4,37 @@
     font-family: 微软雅黑;
 }
 
-#wrapper {
-    width: 400px;
-    height: 200px;
-    border: 1px solid #000000;
-    border-radius: 5px;
+button{
+    cursor: pointer;
 }
 
-#wrapper #header-wrapper {
+/*提示窗口居中显示*/
+#mask-wrapper{
+    width: 400px;
+    height: 200px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    margin: -100px 0 0 -200px;
+}
+
+#mask-wrapper #header-wrapper {
     width: 400px;
     height: 50px;
     background-color: #e6e9ea;
     border-radius: 5px 5px 0 0;
 }
 
-#wrapper #header-wrapper h3{
+#mask-wrapper #header-wrapper h3{
     height: 50px;
     line-height: 50px;
     margin-left: 40px;
     display: inline-block;
 }
 
-
-#wrapper #header-wrapper button{
+#mask-wrapper #header-wrapper button{
     width: 30px;
     height: 30px;
     font-size: 20px;
@@ -37,23 +45,27 @@
     outline: none;
 }
 
-#wrapper #header-wrapper button:hover{
+#mask-wrapper #header-wrapper button:hover{
     background-color: #ea3b3a;
 }
 
-#wrapper #header-wrapper button:active{
+#mask-wrapper #header-wrapper button:active{
     background-color: #cfe4db;
 }
 
-#wrapper #content-wrapper{
-    margin-top: 20px;
-    margin-left: 20px;
+#mask-wrapper #content-wrapper{
+    margin: 20px;
     line-height: 30px;
 }
 
-#wrapper #content-wrapper button{
+#mask-wrapper #content-wrapper #button-wrapper{
+    text-align: center;
+}
+
+#mask-wrapper #content-wrapper #button-wrapper button{
     width: 60px;
     height: 26px;
+    margin: 20px 5px 0 5px;
     font-size: 15px;
     background-color: #FFFFFF;
     border: 1px solid #cfd1ce;
@@ -61,12 +73,23 @@
     outline: none;
 }
 
-#wrapper #content-wrapper button:hover{
+#mask-wrapper #content-wrapper  #button-wrapper button:hover{
     background-color: #cfd1ce;
     outline: none;
 }
 
-#wrapper #content-wrapper button:first-child{
-    background-color: #e8dcfc;
+#mask-wrapper #content-wrapper  #button-wrapper button:first-child:hover{
+    background-color: #a1d8e7;
     outline: none;
+}
+/*遮罩颜色层*/
+#mask{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #00b49e;
+    top:0;
+    filter: alpha(opacity=30);  /*proprietary  IE  code */
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
 }
