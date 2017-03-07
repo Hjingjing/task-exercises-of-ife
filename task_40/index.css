@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: "MicrosoftJhengHei", "Microsoft YaHei";
+}
+
+#table{
+    /*border-collapse: collapse;*/
+    width:400px;
+    height: 200px;
+    margin:150px auto;
+    border:2px solid #333333;
+    border-top: none;
+}
+
+#table caption{
+    height: 50px;
+    line-height: 50px;
+    border:2px solid #333333;
+    border-bottom: none;
+    background-color: #9ecae7;
+    position: relative;
+}
+
+/*設置 < 和 >*/
+#table caption span{
+    position: absolute;
+    font-size: 20px;
+    width: 50px;
+    cursor: pointer;
+}
+
+#table caption span:hover{
+    background-color: #FFFFFF;
+}
+
+#table caption span:first-of-type{
+    left: 20px;
+}
+
+#table caption span:last-of-type{
+    right: 20px;
+}
+
+/*高亮星期六、日*/
+#table thead tr th:first-child,
+#table thead tr th:last-child,
+#table tbody tr td:first-child,
+#table tbody tr td:last-child{
+    color:#9ecae7;
+}
+
+/*鼠表浮在日期設置背景色*/
+#table tbody tr td:hover{
+    background-color: #9ecae7;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
