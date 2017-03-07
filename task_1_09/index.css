@@ -1,0 +1,72 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "MicrosoftJhengHei", "Microsoft YaHei";
+    text-decoration: none;
+}
+
+/* 顶部蓝色条 */
+.top_banner{
+    width: 100%;
+    height: 56px;
+    background-color: #2189bf;
+}
+
+.top_banner img{
+    position: absolute;
+    right: 126px;
+    top: 20px;
+}
+
+.top_banner img:first-child{
+    position: relative;
+    top:11px;
+    left: 51px;
+}
+
+.top_banner input{
+    border:0;
+    background-color: transparent;
+    font-size: 14px;
+    position: absolute;
+    right: 94px;
+    top: 20px;
+    color: #ffffff;
+}
+
+.top_banner form>input{
+    background-color: #ffffff;
+    position: absolute;
+    right: 162px;
+    top: 14px;
+    border-radius: 25px;
+    width: 314px;
+    height: 28px;
+    outline: none;
+    background-image: url("images/zoom.png");
+    background-repeat: no-repeat;
+    background-position: 6%;
+}
+
+/* 左边蓝黑色导航 */
+.left{
+    width: 260px;
+    height: 1210px;
+    background-color: #2a2e3d;
+    display: inline-block;
+}
+
+/* 右边内容 */
+.right_top{
+    display: inline-block;
+    width: 260px;
+    height: 56px;
+}
+
+
+
+
+
+
